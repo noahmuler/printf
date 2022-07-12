@@ -1,17 +1,12 @@
-/**
- * File: handlers.c
- * Auth: Dawit Abebe and
- *      Tibebe solomon
- */
 #include "main.h"
- /**
-  * handle_flags Matches flags with corresponding values.
-  * @flag: A pointer to a potential string of flags.
-  * @index: An index counter for the original format string.
-  *
-  * Return: If flag characters are matched - a corresponding value.
-  * Otherwise - 0.
-  */
+/**
+ * handle_flags - Matches flags with corresponding values.
+ * @flag: A pointer to a potential string of flags.
+ * @index: An index counter for the original format string.
+ *
+ * Return: If flag characters are matched - a corresponding value.
+ * Otherwise - 0.
+ */
 unsigned char handle_flags(const char *flag, char *index)
 {
 	int i, j;
@@ -158,7 +153,8 @@ int handle_precision(va_list args, const char *modifier, char *index)
 /**
  * handle_specifiers - Matches a conversion specifier with
  *    a corresponding conversion function.
- *    @specifier: A pointer to a potential conversion specifier.
+ *    @int: A pointer to a potential conversion specifier.
+ *    @char: char
  *
  *    Return: If a conversion function is matched - a pointer to the function.
  *    Otherwise - NULL.

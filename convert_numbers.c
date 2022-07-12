@@ -1,9 +1,3 @@
-/**
- * File: convert_numbers.c
- * Auth: Amanuel Kebede
- *       Noah Tadesse
- */
-
 #include "main.h"
 
 /**

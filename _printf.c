@@ -1,11 +1,4 @@
-/*
- * File: _printf.c
- * Author: Amanuel Kebede
- * 	       Noah Tadesse
- */
-
 #include "main.h"
-
 /**
  * cleanup - Peforms cleanup operations for _printf.
  * @args: A va_list of arguments provided to _printf.
@@ -31,8 +24,7 @@ int run_printf(const char *format, va_list args, buffer_t *output)
 	int i, wid, prec, ret = 0;
 	char tmp;
 	unsigned char flags, len;
-	unsigned int (*f)(va_list, buffer_t *,
-			unsigned char, int, int, unsigned char);
+	unsigned int (*f)(va_list, buffer_t *, unsigned char, int, int, unsigned char);
 
 	for (i = 0; *(format + i); i++)
 	{
